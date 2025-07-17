@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> wts / shopping</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/hader.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="images/bag-shopping-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/pages/index.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <!-- Fade-in Animation CSS -->
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-img">
+
+        <header id="headerele" class="flex fade-in">
+            <div class="logo">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span style="font-weight: bold;">wts</span>
+                <p style="letter-spacing: 0.5px;">shopping</p>
+            </div>
+            <div class="links">
+                <a style="position: relative;" class="cart" href="/pagess/cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    $0.00
+                    <span class="products-number">2</span>
+                </a>
+                <a class="sign-in" href="/pagess/sign-in.html">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    sign in</a>
+                <a class="register" href="/pagess/registar.html">
+                    <i class="fa-solid fa-user-plus"></i>
+                    register</a>
+            </div>
+        </header>
+
+        <section class="content">
+            <p class="lifestyle fade-in">lifestyle collection</p>
+            <p class="men fade-in">men</p>
+            <p class="sale fade-in">sale up to <span>30% off</span></p>
+            <p class="free-shipping fade-in">get free shipping on orders over $99.00</p>
+
+
+            <button class="fade-in">shop now</button>
+
+        </section>
+
+    </div>
+
+    <!-- Fade-in JavaScript -->
+    <script>
+        window.addEventListener('load', () => {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add('visible');
+                }, index * 250); // تأخير بين كل عنصر والتاني
+            });
+        });
+    </script>
+
+    <main>
+        <h1 class="recommended" id="hhh">
+            <i class="fa-solid fa-check"></i>
+            fa-icon Our products to you
+        </h1>
+
+
+        <section class="products flex">
+            <article class="card boreder">
+
+
+
+                <a href="/pagess/product-details.html">
+                    <img width="266px" src="./images/1.png" alt="">
+                </a>
+
+
+                <div style="width: 266px;" class="content">
+                    <h1 class="title">Men's Athletic Shorts</h1>
+                    <p class="description">
+
+                        Lightweight and breathable shorts made with sweat-wicking fabric. Perfect for workouts or casual
+                        wear.
+
+
+                    </p>
+                    <div class="flex" style="justify-content: space-between; padding-bottom: 0.7rem;">
+                        <div class="price">$15.99</div>
+                        <button class="add-to-cart flex">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            add to cart
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card ">
+
+
+
+                <a href="/pagess/product-details.html">
+                    <img width="266px" src="./images/2.webp" alt="">
+                </a>
+
+
+                <div style="width: 266px;" class="content">
+                    <h1 class="title">Compact Travel Duffel Bag</h1>
+                    <p class="description">
+                        Stylish and durable duffel bag ideal for short trips or gym use. Multiple compartments for easy
+                        organization.
+
+
+                    </p>
+                    <div class="flex" style="justify-content: space-between; padding-bottom: 0.7rem;">
+                        <div class="price">$34.99
+
+                        </div>
+
+                        <button class="add-to-cart flex">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            add to cart
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="card">
+
+
+
+                <a href="/pagess/product-details.html">
+                    <img width="266px" src="./images/3.webp" alt="">
+                </a>
+
+
+                <div style="width: 266px;" class="content">
+                    <h1 class="title">Sporty Backpack by Adidas</h1>
+                    <p class="description">
+                        Sleek, modern backpack with side pockets and adjustable straps. Great for daily use or sports
+                        gear.
+
+
+                    </p>
+                    <div class="flex" style="justify-content: space-between; padding-bottom: 0.7rem;">
+                        <div class="price">$27.99</div>
+                        <button class="add-to-cart flex">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            add to cart
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+
+
+
+                <a href="/pagess/product-details.html">
+                    <img width="266px" src="./images/4.webp" alt="">
+                </a>
+
+
+                <div style="width: 266px;" class="content">
+                    <h1 class="title">Lightweight Knit Sneakers</h1>
+                    <p class="description">
+                        Comfortable sneakers with a breathable knit upper and flexible sole. Designed for walking or
+                        casual outings.
+
+
+                    </p>
+                    <div class="flex" style="justify-content: space-between; padding-bottom: 0.7rem;">
+                        <div class="price">$29.99
+
+                        </div>
+                        <button class="add-to-cart flex">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            add to cart
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="card ">
+
+
+
+                <a href="/pagess/product-details.html">
+                    <img width="266px" src="./images/5.webp" alt="">
+                </a>
+
+
+                <div style="width: 266px;" class="content">
+                    <h1 class="title">Black Sport Cap</h1>
+                    <p class="description">
+                        Minimalist sport cap made of lightweight fabric. Ideal for running, gym, or sunny days.
+
+
+                    </p>
+                    <div class="flex" style="justify-content: space-between; padding-bottom: 0.7rem;">
+                        <div class="price">$9.99</div>
+
+                        <button class="add-to-cart flex">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            add to cart
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+
+
+
+            <article class="card ">
+
+
+
+                <a href="/pagess/product-details.html">
+                    <img width="266px" src="./images/6.webp" alt="">
+                </a>
+
+
+                <div style="width: 266px;" class="content">
+                    <h1 class="title">Smart Fitness Watch</h1>
+                    <p class="description">
+                        Modern smartwatch with heart rate tracking, step counter, and message notifications. Stylish and
+                        functional.
+
+
+                    </p>
+                    <div class="flex" style="justify-content: space-between; padding-bottom: 0.7rem;">
+                        <div class="price">$14.99</div>
+
+                        <button class="add-to-cart flex">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            add to cart
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+
+            <article class="card ">
+
+
+
+                <a href="/pagess/product-details.html">
+                    <img width="266px" src="./images/7.webp" alt="">
+                </a>
+
+
+                <div style="width: 266px;" class="content">
+                    <h1 class="title">Classic Black Sunglasses</h1>
+                    <p class="description">
+                        Timeless sunglasses with UV protection lenses. Perfect for driving, traveling, or everyday use.
+
+
+                    </p>
+                    <div class="flex" style="justify-content: space-between; padding-bottom: 0.7rem;">
+                        <div class="price">$14.99
+
+                        </div>
+
+                        <button class="add-to-cart flex">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            add to cart
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+
+            <article class="card ">
+
+
+
+                <a href="/pagess/product-details.html">
+                    <img width="266px" src="./images/8.png" alt="">
+                </a>
+
+
+                <div style="width: 266px;" class="content">
+                    <h1 class="title">Men's Sleeveless Workout Shirt</h1>
+                    <p class="description">
+                        Muscle-fit sleeveless shirt made for comfort during workouts. Stretchy and sweat-resistant
+                        fabric.
+
+
+                    </p>
+                    <div class="flex" style="justify-content: space-between; padding-bottom: 0.7rem;">
+                        <div class="price">$12.99</div>
+
+                        <button class="add-to-cart flex">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            add to cart
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+        </section>
+    </main>
+
+
+
+    <footer>
+        designed and developed by
+        <span>omar nabil</span>
+
+    </footer>
+
+    <script src="./js/main.js">s</script>
+</body>
+
+</html>
